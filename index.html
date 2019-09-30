@@ -1,62 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <h2>DATA SCIENCE BY MASRUL MOLLAH</h2>
-    <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'ALGORITHOM')">ALGORITHOM</button>
-  <button class="tablinks" onclick="openCity(event, 'MACHINE LEARNING')">MACHINE LEARNING</button>
-  <button class="tablinks" onclick="openCity(event, 'ARTIFICAL INTELIGENCE')">ARTIFICAL INTELIGENCE</button>
-  <button class="tablinks" onclick="openCity(event, 'DATA SCIENCE')">TOURS & TRAVELS</button>
-  <button class="tablinks" onclick="openCity(event, 'INTERNET OF THINGS')">INTERNET OF THINGS</button>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>MD MASRUL MOLLAH ACA ACMA</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'ABOUT ME')">ABOUT ME</button>
+  <button class="tablinks" onclick="openCity(event, 'PROFESSIONAL SPECIALIZATION')">PROFESSIONAL SPECIALIZATION</button>
+  <button class="tablinks" onclick="openCity(event, 'PROFESSIONAL QUALIFICATION')">PROFESSIONAL QUALIFICATION</button>
+  </div>
+
+<div id="ABOUT ME" class="tabcontent">
+  <h3>ABOUT ME</h3>
+  <p>MD. MASRUL MOLLAH ACA, ACMA, CGMA</p>
+  <p>Mobile: +880(17) 39 573935</p>
+  <p>E-mail: masrulkpmg@gmail.com</p>
+  <p>LinkedIn: Md. Masrul Mollah ACA ACMA CGMA</p>
+  <p>Experienced finance professional having over 8 years and 3 months of extensive experience in supply chain finance, business finance, accounting, auditing, tax, VAT and transfer pricing including 4.5 years at KPMG Bangladesh and 3.9 years of corporate experience at Unilever Bangladesh.</p>
 </div>
-    <div id="ALGORITHOM" class="tabcontent">
-  <h3>ALGORITHOM</h3>
-  <p>Algorithom is set of repetable steps</p>
-    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
-
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'oRkNaF0QvnI?rel=0',     
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-      </div>
-    </script>
-  </body>
-</html>
+<div id="PROFESSIONAL SPECIALIZATION" class="tabcontent">
+  <h3>PROFESSIONAL SPECIALIZATION</h3>
+  <p>-Supply Chain Finance (procurement, distribution, inventory management and 3P manufacturing)</p>
+  <p>-Leading supply chain savings projects (including buying, make and non-make)</p>
+  <p>-Drive supply chain business cases (both innovation and extension)</p>
+  <p>-Business analytics (material rates and inflations, take backs, distribution cost and 3P conversion cost)</p>
+  <p>-Corporate and personal Income Tax – Compliance, Advisory, Planning and Reporting</p>
+  <p>-Indirect Tax (VAT) - Compliance, Advisory, Planning and Reporting</p>
+  <p>-Transfer pricing laws, regulation and documentation</p>
+  <p>-Expert knowledge in compliance and implementation of (IAS and IFRS)</p>
+  <p>-Implementation of internal control with respect to accounting, record keeping, property management system, travel policy, procurement and outsourcing activities.</p>
+  <p>-Statutory Audit and Assurance Services</p>
+  <p>-Due diligence audit for business merger and acquisition</p>
+</div>
+<div id="PROFESSIONAL QUALIFICATION" class="tabcontent">
+  <h3>PROFESSIONAL QUALIFICATION</h3>
+  <p>ICAEW ACA – Qualified - 2018</p>
+  <p>ACMA - ASSOCIATE COST MANAGEMENT ACCOUNTANT - 2017</p>
+  <p>ACA - ASSOCIATE CHARTERED ACCOUNTANT - 2015</p>
+  <p>CAT - CERTIFIED ACCOUNTING TECHNICIAN - 2009</p>
+  <p>ACCA - ASSOCIATE OF CERTIFIED CHARTERED ACCOUNTANTS (ACCA), UK - Final Level Student</p>
+  <p>ITP - Certified “INCOME TAX PRACTITIONER (ITP)” in BANGLADESH - 2012</p>
+  <p></p>
+  <p>ACADEMIC QUALIFICATION</p>
+  <p>Bachelor of Business Administration (BBA) from Khulna University - 2011</p>
+  <p>Higher Secondary Certificate (HSC) from Govt. M M City College, Khulna - 2006</p>
+  <p>Secondary School Certificate (SSC) from Khulna Zilla School - 2004</p>
+</div>
+  
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
